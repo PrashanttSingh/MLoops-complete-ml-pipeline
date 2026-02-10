@@ -3,8 +3,6 @@ import os
 from sklearn.model_selection import train_test_split
 import logging
 
-
-
 # Ensure the "logs" directory exists
 log_dir = 'logs'
 os.makedirs(log_dir, exist_ok=True)
@@ -71,7 +69,6 @@ def save_data(train_data: pd.DataFrame, test_data: pd.DataFrame, data_path: str)
 
 def main():
     try:
-       
         test_size = 0.2
         data_path = 'https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv'
         df = load_data(data_url=data_path)
