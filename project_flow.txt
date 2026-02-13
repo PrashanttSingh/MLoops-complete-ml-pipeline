@@ -1,3 +1,12 @@
 1. create  a github repo with the project name and clone it inside  a folder.(add experiments)..
-2. add source folder and run them individually..
-3. 
+2. add source folder and run them individually..(here we have created complete components involved
+   while executing  any project)..
+3. add data,models and reports(i have not done it😅) to gitignore file because they are huge files of data 
+   sets which normally are in gbs,so theycannot be handled by git .we would track them with dvc in future
+4. fdo git add,commit and push ..
+
+5. setting up a dvc pipeline (without params)
+   >create dvc.yaml file and add stages to it .(if you dont know about yaml files then have 
+    a go through on google ,its simple only 10 minutes you will know all about it)..
+   >dvc init and then do dvc repro to test the pipeline automation(check dvc dag)
+   >now git add commit and push
